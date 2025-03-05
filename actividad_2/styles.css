@@ -1,27 +1,18 @@
-.container {
-    font-size: 40px;
+div.box {
+    background-color: blue;
     width: 100%;
-    background-color: lightgray;
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
 }
 
-.d1 {
-    background-color: LightCoral;
+@media (max-width: 800px) {
+    div.box {
+        width: 80%;
+        margin: auto;
+    }
 }
 
-.d2 {
-    background-color: LightBlue;
-}
-
-.d3 {
-    background-color: LightGreen;
-}
-
-.d4 {
-    background-color: LightPink;
-}
-
-.d5 {
-    background-color: LightYellow;
+@media (min-width: 1200px) {
+    div.box {
+        width: 50%;
+        background-color: green;
+    }
 }
