@@ -1,17 +1,17 @@
-div.box {
+.box {
     background-color: blue;
     width: 100%;
 }
 
 @media (max-width: 800px) {
-    div.box {
+    .box {
         width: 80%;
         margin: auto;
     }
 }
 
 @media (min-width: 1200px) {
-    div.box {
+    .box {
         width: 50%;
         background-color: green;
     }
