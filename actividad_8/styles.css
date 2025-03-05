@@ -1,31 +1,26 @@
 .container {
-    font-size: 40px;
-    width: 100%;
-    background-color: lightgray;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
-.d1 {
-    background-color: LightCoral;
+.container div{
+    background-color: rgb(0, 242, 255);
+    padding: 20px;
 }
 
-.d2 {
-    background-color: LightBlue;
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.d3 {
-    background-color: LightGreen;
-}
-
-.d4 {
-    background-color: LightPink;
-}
-
-.d5 {
-    background-color: LightYellow;
-    grid-column: 2/4;
-    grid-row: 4/2;
+@media (max-width: 480px) {
+    .container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
 }
